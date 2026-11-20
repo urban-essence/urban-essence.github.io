@@ -3413,7 +3413,7 @@ text-align:center;
    CONFIGURACIÓN
 ========================================================= */
 
-const WHATSAPP_NUMBER = "51986788414";
+const WHATSAPP_NUMBER = "51987822032";
 
 const STORE_NAME = "Urban Essence";
 
@@ -4000,7 +4000,7 @@ description:"Correa para varón."
 
 {
 id:38,
-name:"Correa para varón",
+name:"Correa para varón-19",
 category:"Correas",
 gender:"Varón",
 price:85.00,
@@ -4015,7 +4015,7 @@ description:"Correa para varón."
 
 {
 id:39,
-name:"Correa para varón",
+name:"Correa para varón-20",
 category:"Correas",
 gender:"Varón",
 price:85.00,
@@ -4030,7 +4030,7 @@ description:"Correa para varón."
 
 {
 id:40,
-name:"Correa para varón",
+name:"Correa para varón-21",
 category:"Correas",
 gender:"Varón",
 price:85.00,
@@ -4045,7 +4045,7 @@ description:"Correa para varón."
 
 {
 id:41,
-name:"Correa para varón",
+name:"Correa para varón-22",
 category:"Correas",
 gender:"Varón",
 price:85.00,
@@ -4060,7 +4060,7 @@ description:"Correa para varón."
 
 {
 id:42,
-name:"Correa para varón",
+name:"Correa para varón-23",
 category:"Correas",
 gender:"Varón",
 price:85.00,
@@ -4075,7 +4075,7 @@ description:"Correa para varón."
 
 {
 id:43,
-name:"Correa para varón",
+name:"Correa para varón-24",
 category:"Correas",
 gender:"Varón",
 price:85.00,
@@ -4090,7 +4090,7 @@ description:"Correa para varón."
 
 {
 id:44,
-name:"Correa para varón",
+name:"Correa para varón-25",
 category:"Correas",
 gender:"Varón",
 price:85.00,
@@ -4163,46 +4163,6 @@ document
 .classList.remove("show");
 
 document.body.style.overflow="";
-
-}
-
-
-/* =========================================================
-   TEMA OSCURO / CLARO
-========================================================= */
-
-function applyTheme(){
-document.body.classList.remove("light");
-localStorage.removeItem("urbanEssenceTheme");
-
-}
-
-
-function toggleTheme(){
-
-const isLight =
-document.body.classList.toggle("light");
-
-localStorage.setItem(
-"urbanEssenceTheme",
-isLight ? "light" : "dark"
-);
-
-const button =
-document.getElementById("themeButton");
-
-if(button){
-
-button.textContent =
-isLight ? "☀️" : "🌙";
-
-}
-
-showToast(
-isLight
-? "☀️ Modo claro activado"
-: "🌙 Modo oscuro activado"
-);
 
 }
 
